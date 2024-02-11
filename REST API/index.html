@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="margin: 0">
+    <h1>Feedback Form</h1>
+    <div id="ratings-container"></div>
+    <form onsubmit="handleformsubmit(event)">
+      <label for="username">Enter your name here</label>
+       <input type="text" id="username" name="username" required>
+       <label for="rating">Rating:</label>
+       <select id="rating" name="rating" required>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+       </select>
+      <button type="submit">Submit</button>
+    </form>
+    <ul></ul>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+  <script src="index.js"></script
+</html>
